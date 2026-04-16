@@ -1,0 +1,18 @@
+<!-- Daniel Benoit. 3/30/26-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+				
+<head>
+	<title>The Hydraulic Shoring Table</title>     
+</head>
+
+<body>
+	<table border="1">      <!-- Turns on the visible border.  in my browser, it's like a 3-d box shape. I did get the expected warning in the HTML checker-->
+		<caption>Table D-1.1/nALUMINUM HYDRAULIC SHORING/nVERTICAL SHORES/nFOR SOIL TYPE A</caption>
+		<tr>
+			<th>DEPTH OF TRENCH (FEET)</th>
+			<th>HYDRAULIC CYLINDERS</th>
+		</tr>
+		

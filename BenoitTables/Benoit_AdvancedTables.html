@@ -1,0 +1,109 @@
+<!-- Daniel Benoit. 4/7/26-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+				
+<head>
+	<title>The Hydraulic Shoring Table</title>     
+</head>
+
+
+<!--I originally printed out the diagram like recommended in the worksheet.  My plan was to measure the size of each box in mm. and set all the colspans and rowspans in that scale.  This would have meant I would have to enter the row and col of each box.  This did not work.  The numbers must be related to the number of text boxes, I could not arbitratily force a scale.  -->
+
+
+<body>
+	<table border="1">      <!-- Turns on the visible border.  in my browser, it's like a 3-d box shape. I did get the expected warning in the HTML checker-->
+
+		<!--it took me three tries to get the caption right.  On my first attempt, I used 4 captions, but this threw an error in the HTML checker.  On the second attemp, I used <p> elements, but this left spaces.  On the third attempt, I used line breaks. This didn't throw an error and the spacing looked good-->
+
+		<!-- <caption>Table D-1.1</caption>
+		<caption>ALUMINUM HYDRAULIC SHORING</caption>
+		<caption>VERTICAL SHORES</caption>
+		<caption>FOR SOIL TYPE A</caption> -->
+
+		<!-- <caption><p>Table D-1.1</p>
+		<p>ALUMINUM HYDRAULIC SHORING</p>
+		<p>VERTICAL SHORES</p>
+		<p>FOR SOIL TYPE A</p></caption> -->
+
+		<caption>Table D-1.1<br>
+		ALUMINUM HYDRAULIC SHORING<br>
+		VERTICAL SHORES<br>
+		FOR SOIL TYPE A</caption>
+
+	<thead>
+		<tr>  <!-- the first entry is three rows deep.  This is becase it is the same height as the three boxes on the left-->
+			<th rowspan="3">DEPTH OF TRENCH (FEET)</th>
+				<!--This is 5 columns wide because it is the summation of two boxes plus a box that is three wide-->
+			<th colspan="5">HYDRAULIC CYLINDERS</th>
+		</tr>
+		<tr>	<!-- it wasn't necessary for me to put the colspan as 1.  the rowspan is two to compensate for the "width of trench" box above the other three boxes below it-->
+			<th colspan="1" rowspan="2">MAXIMUM HOIZONTAL SPACING (FEET) </th>
+			<th colspan="1" rowspan="2">MAXIMUM VERTICLE SPACING (FEET) </th>
+			<th colspan="3">WIDTH OF TRENCH(FEET)</th>
+		</tr>
+		<tr>
+				<!-- these boxes are col and row 1, so no declaration was needed-->
+			<th> UP TO 8</th>
+			<th> OVER 8 UP TO 12</th>
+			<th> OVER 12 UP TO 15</th>
+		</tr>
+	</thead>
+
+	<!--it appears that <th> elements center text, where <td> elements keep it to the left-->
+
+	<tbody>
+		<tr>
+			<th> OVER 5 UP TO 10</th>
+			<td> 8 </td>
+				<!--each of these need to be three boxes high because they each have three left-margin headings-->
+			<td rowspan="3">4</td>
+			<td rowspan="3">2 INCH DIAMETER</td>
+			<td rowspan="3">2 INCH DIAMETER NOTE (2)</td>
+			<td rowspan="3">3 INCH DIAMETER</td>
+		</tr>	
+		<tr>
+			<th>OVER 10 UP TO 15</th>
+			<td> 8 </td>
+		</tr>
+		<tr>
+			<th>Over 10 UP TO 15</th>
+			<td>7</td>
+		</tr>
+		<tr>
+			<th>OVER 20</th>
+				<!--this needed to be 5 wide because it was the entire width minus the one box on the left-->
+			<td colspan="5"> NOTE (1) </td>
+		</tr>
+	</tbody>
+
+	<tfoot> 
+		<tr>
+			<!-- I tried to produce the footer using the two methods.  The commented out method below caused individual boxes around each <td>, I liked the <p> a version better. -->
+
+			<!-- I had to set the footer to take up 6 colums, or the checker through an error-->	
+
+			<td colspan="6"><p>Footnotes to tables, and general notes on hydraulic shoring, are found in Appendix D. Item (g)</p>
+			<p>Note(1): See Appendix D, Item (g)(1)</p>
+			<p>Note(2): See Appendix D, Item (g)(2)</p>
+		</td>
+		</tr>
+
+			<!-- <tr><td>Footnotes to tables, and general notes on hydraulic shoring, are found in Appendix D. Item (g)</td></tr>
+			<tr><td>Note(1): See Appendix D, Item (g)(1)</td></tr>
+			<tr><td>Note(2): See Appendix D, Item (g)(2)</td>></tr> -->
+
+		</tfoot>
+
+	</table>
+</body>		
+</html>	
+
+
+
+
+
+
+
+

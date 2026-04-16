@@ -1,0 +1,86 @@
+<!-- Daniel Benoit. 3/30/26-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+				
+<head>
+	<title>Table Two</title>     <!--the other table has it's own page, it's titled Table One-->
+</head>
+
+<!--  chose the rowspan to match the amount of items purchased at each grocery store.  For example, with "Stop & Shop" below, I have 4 items.  If I want all 4 to be prefaced by just one market entry, I have to set the "rowspan" to 4.  
+I did not have to manualy set the "rowspan" for the last store on the list, because <td> defaults to a rowspan of 1.  -->
+
+<body>
+	<table border="1">      <!-- Turns on the visible border.  in my browser, it's like a 3-d box shape. I did get the expected warning in the HTML checker-->
+		<caption>My Shopping List</caption>
+		<tr>
+			<th>Supermarket</th>
+			<th>Item</th>
+			<th>Price</th>
+		</tr>
+		<tr>
+			<td rowspan = "4">Stop & Shop</td>     <!-- 4 items means using a rowspan of 4-->
+			<td> White Rice </td>
+			<td> 4.50 </td>
+		</tr>
+		<tr>
+			<td> Brown Rice </td>
+			<td> 4.90 </td>
+		</tr>
+		<tr>
+			<td> Dried Pasta </td>
+			<td> 1.99 </td>
+		</tr>
+		<tr>
+			<td> Cheetos </td>
+			<td> 5.29 </td>
+		</tr>
+		<tr>
+			<td rowspan = "4">Shaw's</td>
+			<td> Canned Soup </td>
+			<td> 2.50 </td>
+		</tr>
+		<tr>
+			<td> Red Potatoes </td>
+			<td> 3.99 </td>
+		</tr>
+		<tr>
+			<td> Ranch Dressing </td>
+			<td> 4.99 </td>
+		</tr>
+		<tr>
+			<td> White Bread </td>
+			<td> 4.99 </td>
+		</tr>
+		<tr>
+			<td rowspan = "5">Whole Foods</td>
+			<td> Blueberries </td>
+			<td> 9.99 </td>
+		</tr>
+		<tr>
+			<td> Cheddar Cheese </td>
+			<td> 11.99 </td>
+		</tr>
+		<tr>
+			<td> Taco Shells </td>
+			<td> 7.99 </td>
+		</tr>
+		<tr>
+			<td> Ground Beef </td>
+			<td> 17.99 </td>
+		</tr>
+		<tr>
+			<td> Frozen Pizza </td>
+			<td> 11.34 </td>
+		<tr>
+			<td> Big Y </td> <!-- only one item from this store, so its fine to leave the default rowspan-->
+			<td> Focaccia </td>
+			<td> 3.99 </td>
+		</tr>	
+
+
+
+	</table>		
+</body>
+</html>

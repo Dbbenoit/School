@@ -1,0 +1,423 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Completed Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="table1">
+    <!-- Begin Table -->
+    <!-- This table has just raw HTML elements. Some items might work best with
+         a defined class. For example, the footnote text (and their usage in the body)
+         might be given a different class than other td elements so that they can be
+         styled differently. Judicious use of <span></span> might be advised as well. -->
+
+
+
+ <!-- TABLE 1  TABLE 1 TABLE 1 TABLE 1-->        
+ <!-- I used an example from the following URL
+ https://dribbble.com/shots/9838424-Table-Selection-UI -->
+
+ <!-- I was trying to mimic certain features of the example table.  
+    1-no borders around cells
+    2- a "zebra" pattern of colored and non colored rows.  This doesn't stand out well due to the limited number of rows
+    3- the darker color of the header.  In my table, the header is three rows deep compared to the one row in the example
+    4- no verticle borders
+
+ -->
+
+        <!-- This is to remove the border, as it is not needed in the example -->
+    <!-- <table border="1"> -->
+    <table class="table1">    
+        <!-- Caption goes here. -->
+        <!-- I've broken this up with lines, but it could
+             be left as one line of text. -->
+        <caption>
+            TABLE D - 1.1				<br />
+            ALUMINUM HYDRAULIC SHORING 	<br />
+            VERTICAL SHORES				<br />
+            FOR SOIL TYPE A
+        </caption>
+
+        <!-- Indicate the header area -->
+        <thead class="table1header">
+            <!-- Use of p not required. -->
+            <!-- In general, I've chosen to leave these 
+                 as single lines of text. Wrapping should
+                 be the result of margins/padding and width. -->
+            <tr >
+                <th rowspan="3">
+                    Depth of Trench
+                </th>
+                <th colspan="5">
+                    Hydraulic Cylinders
+                </th>
+            </tr>
+
+            <tr>
+                <th rowspan="2">
+                    Maximum  Horizontal Spacing
+                </th>
+                <th rowspan="2">
+                    Maximum Vertical Spacing
+                </th>
+                <th colspan="3">
+                    Width of Trench (Feet)
+                </th>
+            </tr>
+
+            <tr>
+                <th rowspan="2">Up to 8</th>
+                <th rowspan="2">Over 8 Up to 12</th>
+                <th rowspan="2">Over 12 Up to 15</th>
+            </tr>
+            <!-- I've treated this as a separate row. A matter of taste... -->
+            <tr>
+                <th> (Feet) </th>
+                <th> (Feet) </th>
+                <th> (Feet) </th>
+            </tr>
+        </thead>
+
+        <!-- Footer goes here. Before HTML5, it was a requirement that the footer
+             be before the tbody. In HTML5, it is not required, but recommended. -->
+        <tfoot>
+            <tr>
+                <!-- Split into 3 lines for typographical reasons. -->
+                <td colspan="6">
+                    Footnotes to tables, and general notes on hydraulic shoring, are found in Appendix D, Item (g) <br />
+                    Note (1): See Appendix D, Item (g)(1) <br />
+                    Note (2): See Appendix D, Item (g)(2)
+                </td>
+            </tr>
+        </tfoot>
+
+        <!-- Begin the table body. -->
+        <tbody class="table1tbody">
+            <tr class="table1OddRows">
+                <th >Over 5 Up To 10</th>
+                <td>8</td>
+                <td rowspan="3">4</td>
+                <td rowspan="3">2 Inch Diameter</td>
+                <td rowspan="3">2 Inch Diameter Note(2)</td>
+                <td rowspan="3">3 Inch Diameter</td>
+            </tr>
+
+            <tr>
+                <th>Over 10 Up To 15</th>
+                <td>8</td>
+            </tr>
+
+            <tr class="table1OddRows">
+                <th>Over 15 Up To 20</th>
+                <td>7</td>
+            </tr>
+
+            <tr>
+                <th>Over 20</th>
+                <td colspan="5">Note(1)</td>
+            </tr>
+        </tbody>
+    </table>
+
+<p> </p>
+
+<!-- TABLE 2  TABLE 2 TABLE 2 TABLE 2-->   
+
+    <table border="1">
+        <!-- Caption goes here. -->
+        <!-- I've broken this up with lines, but it could
+             be left as one line of text. -->
+        <caption>
+            TABLE D - 1.1               <br />
+            ALUMINUM HYDRAULIC SHORING  <br />
+            VERTICAL SHORES             <br />
+            FOR SOIL TYPE A
+        </caption>
+
+        <!-- Indicate the header area -->
+        <thead>
+            <!-- Use of p not required. -->
+            <!-- In general, I've chosen to leave these 
+                 as single lines of text. Wrapping should
+                 be the result of margins/padding and width. -->
+            <tr>
+                <th rowspan="3">
+                    Depth of Trench
+                </th>
+                <th colspan="5">
+                    Hydraulic Cylinders
+                </th>
+            </tr>
+
+            <tr>
+                <th rowspan="2">
+                    Maximum  Horizontal Spacing
+                </th>
+                <th rowspan="2">
+                    Maximum Vertical Spacing
+                </th>
+                <th colspan="3">
+                    Width of Trench (Feet)
+                </th>
+            </tr>
+
+            <tr>
+                <th rowspan="2">Up to 8</th>
+                <th rowspan="2">Over 8 Up to 12</th>
+                <th rowspan="2">Over 12 Up to 15</th>
+            </tr>
+            <!-- I've treated this as a separate row. A matter of taste... -->
+            <tr>
+                <th> (Feet) </th>
+                <th> (Feet) </th>
+                <th> (Feet) </th>
+            </tr>
+        </thead>
+
+        <!-- Footer goes here. Before HTML5, it was a requirement that the footer
+             be before the tbody. In HTML5, it is not required, but recommended. -->
+        <tfoot>
+            <tr>
+                <!-- Split into 3 lines for typographical reasons. -->
+                <td colspan="6">
+                    Footnotes to tables, and general notes on hydraulic shoring, are found in Appendix D, Item (g) <br />
+                    Note (1): See Appendix D, Item (g)(1) <br />
+                    Note (2): See Appendix D, Item (g)(2)
+                </td>
+            </tr>
+        </tfoot>
+
+        <!-- Begin the table body. -->
+        <tbody>
+            <tr>
+                <th>Over 5 Up To 10</th>
+                <td>8</td>
+                <td rowspan="3">4</td>
+                <td rowspan="3">2 Inch Diameter</td>
+                <td rowspan="3">2 Inch Diameter Note(2)</td>
+                <td rowspan="3">3 Inch Diameter</td>
+            </tr>
+
+            <tr>
+                <th>Over 10 Up To 15</th>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <th>Over 15 Up To 20</th>
+                <td>7</td>
+            </tr>
+
+            <tr>
+                <th>Over 20</th>
+                <td colspan="5">Note(1)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p> </p>
+
+
+<!-- TABLE 3  TABLE 3 TABLE 3 TABLE 3-->   
+
+
+        <table border="1">
+        <!-- Caption goes here. -->
+        <!-- I've broken this up with lines, but it could
+             be left as one line of text. -->
+        <caption>
+            TABLE D - 1.1               <br />
+            ALUMINUM HYDRAULIC SHORING  <br />
+            VERTICAL SHORES             <br />
+            FOR SOIL TYPE A
+        </caption>
+
+        <!-- Indicate the header area -->
+        <thead>
+            <!-- Use of p not required. -->
+            <!-- In general, I've chosen to leave these 
+                 as single lines of text. Wrapping should
+                 be the result of margins/padding and width. -->
+            <tr>
+                <th rowspan="3">
+                    Depth of Trench
+                </th>
+                <th colspan="5">
+                    Hydraulic Cylinders
+                </th>
+            </tr>
+
+            <tr>
+                <th rowspan="2">
+                    Maximum  Horizontal Spacing
+                </th>
+                <th rowspan="2">
+                    Maximum Vertical Spacing
+                </th>
+                <th colspan="3">
+                    Width of Trench (Feet)
+                </th>
+            </tr>
+
+            <tr>
+                <th rowspan="2">Up to 8</th>
+                <th rowspan="2">Over 8 Up to 12</th>
+                <th rowspan="2">Over 12 Up to 15</th>
+            </tr>
+            <!-- I've treated this as a separate row. A matter of taste... -->
+            <tr>
+                <th> (Feet) </th>
+                <th> (Feet) </th>
+                <th> (Feet) </th>
+            </tr>
+        </thead>
+
+        <!-- Footer goes here. Before HTML5, it was a requirement that the footer
+             be before the tbody. In HTML5, it is not required, but recommended. -->
+        <tfoot>
+            <tr>
+                <!-- Split into 3 lines for typographical reasons. -->
+                <td colspan="6">
+                    Footnotes to tables, and general notes on hydraulic shoring, are found in Appendix D, Item (g) <br />
+                    Note (1): See Appendix D, Item (g)(1) <br />
+                    Note (2): See Appendix D, Item (g)(2)
+                </td>
+            </tr>
+        </tfoot>
+
+        <!-- Begin the table body. -->
+        <tbody>
+            <tr>
+                <th>Over 5 Up To 10</th>
+                <td>8</td>
+                <td rowspan="3">4</td>
+                <td rowspan="3">2 Inch Diameter</td>
+                <td rowspan="3">2 Inch Diameter Note(2)</td>
+                <td rowspan="3">3 Inch Diameter</td>
+            </tr>
+
+            <tr>
+                <th>Over 10 Up To 15</th>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <th>Over 15 Up To 20</th>
+                <td>7</td>
+            </tr>
+
+            <tr>
+                <th>Over 20</th>
+                <td colspan="5">Note(1)</td>
+            </tr>
+        </tbody>
+        <p></p>
+    </table>
+
+
+    <!-- TABLE 4  TABLE 4 TABLE 4 TABLE 4-->   
+
+
+        <table border="1">
+        <!-- Caption goes here. -->
+        <!-- I've broken this up with lines, but it could
+             be left as one line of text. -->
+        <caption>
+            TABLE D - 1.1               <br />
+            ALUMINUM HYDRAULIC SHORING  <br />
+            VERTICAL SHORES             <br />
+            FOR SOIL TYPE A
+        </caption>
+
+        <!-- Indicate the header area -->
+        <thead>
+            <!-- Use of p not required. -->
+            <!-- In general, I've chosen to leave these 
+                 as single lines of text. Wrapping should
+                 be the result of margins/padding and width. -->
+            <tr>
+                <th rowspan="3">
+                    Depth of Trench
+                </th>
+                <th colspan="5">
+                    Hydraulic Cylinders
+                </th>
+            </tr>
+
+            <tr>
+                <th rowspan="2">
+                    Maximum  Horizontal Spacing
+                </th>
+                <th rowspan="2">
+                    Maximum Vertical Spacing
+                </th>
+                <th colspan="3">
+                    Width of Trench (Feet)
+                </th>
+            </tr>
+
+            <tr>
+                <th rowspan="2">Up to 8</th>
+                <th rowspan="2">Over 8 Up to 12</th>
+                <th rowspan="2">Over 12 Up to 15</th>
+            </tr>
+            <!-- I've treated this as a separate row. A matter of taste... -->
+            <tr>
+                <th> (Feet) </th>
+                <th> (Feet) </th>
+                <th> (Feet) </th>
+            </tr>
+        </thead>
+
+        <!-- Footer goes here. Before HTML5, it was a requirement that the footer
+             be before the tbody. In HTML5, it is not required, but recommended. -->
+        <tfoot>
+            <tr>
+                <!-- Split into 3 lines for typographical reasons. -->
+                <td colspan="6">
+                    Footnotes to tables, and general notes on hydraulic shoring, are found in Appendix D, Item (g) <br />
+                    Note (1): See Appendix D, Item (g)(1) <br />
+                    Note (2): See Appendix D, Item (g)(2)
+                </td>
+            </tr>
+        </tfoot>
+
+        <!-- Begin the table body. -->
+        <tbody>
+            <tr>
+                <th>Over 5 Up To 10</th>
+                <td>8</td>
+                <td rowspan="3">4</td>
+                <td rowspan="3">2 Inch Diameter</td>
+                <td rowspan="3">2 Inch Diameter Note(2)</td>
+                <td rowspan="3">3 Inch Diameter</td>
+            </tr>
+
+            <tr>
+                <th>Over 10 Up To 15</th>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <th>Over 15 Up To 20</th>
+                <td>7</td>
+            </tr>
+
+            <tr>
+                <th>Over 20</th>
+                <td colspan="5">Note(1)</td>
+            </tr>
+        </tbody>
+        <p></p>
+    </table>
+
+
+
+
+
+
+
+</body>
+</html>
