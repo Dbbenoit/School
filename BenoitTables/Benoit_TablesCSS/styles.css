@@ -10,24 +10,36 @@ body{
 	.table1{
 
 
-	
+	.thqualities{
+		border-collapse: collapse;
+		border-spacing: 0px;
+		background-color: rgb(195, 177, 225); 
+		border: 0;
+	}
 
+	.headerqualities{
+
+		
+
+
+
+	}
 
 	.table1header{
 
-		th:nth-child(even){
+		/*th:nth-child(even){
 			background-color: rgb(195, 177, 225);
 		}
 
 		th:nth-child(odd){
 			background-color: rgb(195, 177, 225);
-			/*pastel purple*/
+			pastel purple
 		}
+		*/
 
-
-		/*background-color: rgb(195, 177, 225);*/
-		/*border-collapse: collapse;
-		border-spacing: 0px;*/
+		/* background-color: rgb(195, 177, 225); */
+		border-collapse: collapse;
+		border-spacing: 0px;
 			}
 			
 
