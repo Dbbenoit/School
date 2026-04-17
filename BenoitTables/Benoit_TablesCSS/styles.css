@@ -6,28 +6,64 @@ head{
 
 
 body{
+/*background-color: red;*/
+	}
 
 	.table1{
 
+		border-color: rgb(195,177, 255) ;
 
-	.thqualities{
-		border-collapse: collapse;
+	border-collapse: collapse;
+
+		}
+
+	.table1 th{
+		
 		border-spacing: 0px;
 		background-color: rgb(195, 177, 225); 
-		border: 0;
-	}
+		border-width: 20px;
 
-	.headerqualities{
-
-		
-
-
+		padding: 0px;
+		border-color: rgb(195, 177, 255);
+		border-style: solid;
 
 	}
 
-	.table1header{
+	/*.table1 td{
 
-		/*th:nth-child(even){
+		td:nth-child(even){
+			background-color: rgb(246, 206, 252);
+
+
+	}*/
+
+	.table1tbody{
+
+	}
+
+	.table1tbody tr:nth-child(even){
+			background-color: rgb(246, 206, 252);
+			/*border-collapse: collapse;*/
+		}
+
+	/*.centeralign{
+
+
+
+		text-align: center;
+		vertical-align: center;
+
+
+		border-spacing: 0px;
+		border-collapse: collapse;
+		}*/
+	
+
+	
+
+	/*.table1header{
+
+		th:nth-child(even){
 			background-color: rgb(195, 177, 225);
 		}
 
@@ -35,33 +71,33 @@ body{
 			background-color: rgb(195, 177, 225);
 			pastel purple
 		}
-		*/
+		
 
-		/* background-color: rgb(195, 177, 225); */
+		 background-color: rgb(195, 177, 225); 
 		border-collapse: collapse;
 		border-spacing: 0px;
-			}
+			}*/
 			
 
 
 
 
-	.table1OddRows{
+	/*.table1OddRows{
 		/*background-color: rgb(246, 206, 252);*/
 
-		th:nth-child(even){
+		/*th:nth-child(even){
 			background-color: rgb(246, 206, 252);
 		}
 		td:nth-child(even){
 			background-color: rgb(246, 206, 252);
 
 		}
-
+			*/
 	}
 
 
 
-	.table1tbody{
+	/*.table1tbody{
 
 		text-align: center;
 		vertical-align: center;
@@ -73,15 +109,17 @@ body{
   		padding-bottom: 0px;
   		padding-left: 0px;
   		padding-right: 0px;
-		row-gap: 0;*/
+		row-gap: 0;
 
-	}
+		}*/
+
+	
 
 
-}
 
 
-}
+
+
 
 
 

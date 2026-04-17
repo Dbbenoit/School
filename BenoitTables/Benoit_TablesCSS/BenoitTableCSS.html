@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="table1">
+<body >
     <!-- Begin Table -->
     <!-- This table has just raw HTML elements. Some items might work best with
          a defined class. For example, the footnote text (and their usage in the body)
@@ -16,6 +16,7 @@
 
 
  <!-- TABLE 1  TABLE 1 TABLE 1 TABLE 1-->        
+
  <!-- I used an example from the following URL
  https://dribbble.com/shots/9838424-Table-Selection-UI -->
 
@@ -41,39 +42,39 @@
         </caption>
 
         <!-- Indicate the header area -->
-        <thead class="table1header">
+        <thead >
             <!-- Use of p not required. -->
             <!-- In general, I've chosen to leave these 
                  as single lines of text. Wrapping should
                  be the result of margins/padding and width. -->
             <tr >
-                <th class="thqualities" rowspan="3">
+                <th  rowspan="3">
                     Depth of Trench
                 </th>
-                <th class="thqualities"colspan="5">
+                <th colspan="5">
                     Hydraulic Cylinders
                 </th>
             </tr>
 
             <tr>
-                <th class="thqualities"rowspan="2">
+                <th rowspan="2">
                     Maximum  Horizontal Spacing
                 </th>
-                <th class="thqualities" rowspan="2">
+                <th  rowspan="2">
                     Maximum Vertical Spacing
                 </th>
-                <th class="thqualities" colspan="3">
+                <th  colspan="3">
                     Width of Trench (Feet)
                 </th>
             </tr>
 
-            <tr class="thqualities">
+            <tr >
                 <th rowspan="2">Up to 8</th>
                 <th rowspan="2">Over 8 Up to 12</th>
                 <th rowspan="2">Over 12 Up to 15</th>
             </tr>
             <!-- I've treated this as a separate row. A matter of taste... -->
-            <tr class="thqualities">
+            <tr >
                 <th> (Feet) </th>
                 <th> (Feet) </th>
                 <th> (Feet) </th>
@@ -94,24 +95,28 @@
         </tfoot>
 
         <!-- Begin the table body. -->
-        <tbody class="table1tbody">
-            <tr class="table1OddRows">
+        <tbody class="table1tbody" >
+            <tr >
                 <th >Over 5 Up To 10</th>
-                <td>8</td>
-                <td rowspan="3">4</td>
-                <td rowspan="3">2 Inch Diameter</td>
-                <td rowspan="3">2 Inch Diameter Note(2)</td>
-                <td rowspan="3">3 Inch Diameter</td>
+                <td class="centeralign">8</td>
+                <td class="centeralign" > </td>
+                <td class="centeralign" > </td>
+                <td class="centeralign" > </td>
+                <td class="centeralign" > </td>
             </tr>
 
             <tr>
                 <th>Over 10 Up To 15</th>
-                <td>8</td>
+                <td class="centeralign">8</td>
+                <td class="centeralign">4</td>
+                <td class="centeralign">2 Inch Diameter</td>
+                <td class="centeralign">2 Inch Diameter Note(2)</td>
+                <td class="centeralign">3 Inch Diameter</td>
             </tr>
 
             <tr class="table1OddRows">
                 <th>Over 15 Up To 20</th>
-                <td>7</td>
+                <td class="centeralign">7</td>
             </tr>
 
             <tr>
@@ -122,6 +127,9 @@
     </table>
 
 <p> </p>
+
+
+
 
 <!-- TABLE 2  TABLE 2 TABLE 2 TABLE 2-->   
 
@@ -218,6 +226,11 @@
     </table>
 
     <p> </p>
+
+
+
+
+
 
 
 <!-- TABLE 3  TABLE 3 TABLE 3 TABLE 3-->   
