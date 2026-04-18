@@ -1,101 +1,50 @@
-head{
+/* Daniel Benoit 04/17/26
+
+
+Comments that include the URL for the copied tables as well as modifications to the HTML that had to be made are located in the HTML document */
 
 
 
-}
 
-
-body{
-/*background-color: red;*/
-	}
 
 	.table1{
 
-		border-color: rgb(195,177, 255) ;
-
-	border-collapse: collapse;
-
+			/* I asked copilot to tell me what font the original text was */
+		font-family: 'Inter', sans-serif;	
+			
+		border-collapse: collapse;
 		}
+
 
 	.table1 th{
 		
 		border-spacing: 0px;
 		background-color: rgb(195, 177, 225); 
 		border-width: 0px;
+		/* the table i was copying only had one row for a heading, so I got rid of the border to make the multiple rows look like one row. */
+		
+		/* The spacing is a little tight between the rows on the left headings, but I wanted to keep the zebra stripes short like in the example. If I wanted to increase the distance between the top and bottom of the headings, I could add the following text:  
 
-		padding: 0px;
-		border-color: rgb(195, 177, 255);
-		border-style: solid;
-
-	}
-
-	/*.table1 td{
-
-		td:nth-child(even){
-			background-color: rgb(246, 206, 252);
-
-
-	}*/
-
-	.table1tbody{
-
-	}
-
-	.table1tbody tr:nth-child(even){
-			background-color: rgb(246, 206, 252);
-			/*border-collapse: collapse;*/
+		 	padding-top: 5px;
+			padding-bottom: 5pc;
+		 */
 		}
 
-	/*.centeralign{
+			/* The following class is used to create the alternating stripes in the the table */
+	.table1 tr:nth-child(even){
+			background-color: rgb(246, 206, 252);
+		}
 
-
-
+			/* <!-- ceneralign is used to center the text in the 4 striped rows */
+	.centeralign{
 		text-align: center;
 		vertical-align: center;
-
-
-		border-spacing: 0px;
-		border-collapse: collapse;
-		}*/
+		}
 	
 
 	
 
-	/*.table1header{
-
-		th:nth-child(even){
-			background-color: rgb(195, 177, 225);
-		}
-
-		th:nth-child(odd){
-			background-color: rgb(195, 177, 225);
-			pastel purple
-		}
-		
-
-		 background-color: rgb(195, 177, 225); 
-		border-collapse: collapse;
-		border-spacing: 0px;
-			}*/
-			
-
-
-
-
-	/*.table1OddRows{
-		/*background-color: rgb(246, 206, 252);*/
-
-		/*th:nth-child(even){
-			background-color: rgb(246, 206, 252);
-		}
-		td:nth-child(even){
-			background-color: rgb(246, 206, 252);
-
-		}
-			*/
-	}
-
-
+	
 
 	/*.table1tbody{
 
@@ -113,12 +62,97 @@ body{
 
 		}*/
 
+
+		/* Table 2  */
+
+
+		.table2{
+			
+			border-collapse: collapse;
+			border: 7px solid green;
+			
+		}
 	
+		.upperth{
+
+			/* border-width: 0px; */
+			background-color: lightyellow;
+			
+
+		}
+
+		/* .table2 th {
+			border-width: 0px;
+		} */
+
+		.table2 thead th{
+			border: 0px;
+		}
+
+		.table2 tbody tr{
+			border-collapse: collapse;
+			border: 0px;
+			
+		}
+
+		.table2 tbody th{
+
+			border-left: 0px;
+			border-right: 0px;
+		}
+
+		.table2 tbody td{
+			border-collapse: collapse;
+			/* border: 0px; */
+			border-left: 0px;
+			border-right: 0px;
+			text-align: center;
+				/* This padding was added to make sure the "2-inch diameter, 2-inch diameter note(2) and 3-inch diameter" don't touch */
+			padding-right: 1em;
+
+		}
 
 
 
+		.table3{
+			border-collapse: collapse;
+			border: 2px solid black;
+		}
 
+		.table3 caption{
+			color: rgb(255, 69, 0);
 
+		}
+
+		.table3 thead {
+			border: 0px;
+			background-color: rgb(255, 69, 0);
+			color: white;
+		}
+
+		.table3 tbody th{
+			border: 1px solid rgb(255, 69, 0);
+			text-align: center;
+			border-left: 1px solid rgb(255, 69, 0);
+			
+		}
+
+		.table3 tbody td{
+			border: 1px solid rgb(255, 69, 0);
+			text-align: center;
+			border-left: 1px solid rgb(255, 69, 0);
+			padding-right: 1em;
+			padding-left: 1em;
+		}
+
+		 .table3 tfoot {
+			color: rgb(255, 69, 0);
+		} 
+
+		.colorfill{
+			background-color: rgb(255, 140, 0);
+		}
+		
 
 
 
