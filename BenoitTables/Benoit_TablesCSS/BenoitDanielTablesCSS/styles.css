@@ -7,8 +7,7 @@ Comments that include the URL for the copied tables as well as modifications to 
 
 
 
-	.table1{
-
+		.table1{
 			/* I asked copilot to tell me what font the original text was */
 		font-family: 'Inter', sans-serif;	
 			
@@ -16,8 +15,7 @@ Comments that include the URL for the copied tables as well as modifications to 
 		}
 
 
-	.table1 th{
-		
+		.table1 th{
 		border-spacing: 0px;
 		background-color: rgb(195, 177, 225); 
 		border-width: 0px;
@@ -31,39 +29,19 @@ Comments that include the URL for the copied tables as well as modifications to 
 		}
 
 			/* The following class is used to create the alternating stripes in the the table */
-	.table1 tr:nth-child(even){
+		.table1 tr:nth-child(even){
 			background-color: rgb(246, 206, 252);
 		}
 
 			/* <!-- ceneralign is used to center the text in the 4 striped rows */
-	.centeralign{
+		.centeralign{
 		text-align: center;
 		vertical-align: center;
 		}
 	
 
-	
 
-	
-
-	/*.table1tbody{
-
-		text-align: center;
-		vertical-align: center;
-
-
-		border-spacing: 0px;
-		border-collapse: collapse;
-		/*padding-top: 0px;
-  		padding-bottom: 0px;
-  		padding-left: 0px;
-  		padding-right: 0px;
-		row-gap: 0;
-
-		}*/
-
-
-		/* Table 2  */
+		/* Table 2============================================================================================== */
 
 
 		.table2{
@@ -77,13 +55,7 @@ Comments that include the URL for the copied tables as well as modifications to 
 
 			/* border-width: 0px; */
 			background-color: lightyellow;
-			
-
 		}
-
-		/* .table2 th {
-			border-width: 0px;
-		} */
 
 		.table2 thead th{
 			border: 0px;
@@ -114,9 +86,16 @@ Comments that include the URL for the copied tables as well as modifications to 
 
 
 
+		/* Table 3============================================================================================== */
+
+
+
 		.table3{
 			border-collapse: collapse;
 			border: 2px solid black;
+
+			/* To determine the font, i took a screenshot of the original table and asked copilot */
+			font-family: 'Poppins', sans-serif;
 		}
 
 		.table3 caption{
@@ -128,12 +107,16 @@ Comments that include the URL for the copied tables as well as modifications to 
 			border: 0px;
 			background-color: rgb(255, 69, 0);
 			color: white;
+			
 		}
 
 		.table3 tbody th{
 			border: 1px solid rgb(255, 69, 0);
 			text-align: center;
 			border-left: 1px solid rgb(255, 69, 0);
+			 	/* Added a little space between the cells */
+			padding-right: 1em;
+			padding-left: 1em;
 			
 		}
 
@@ -150,11 +133,75 @@ Comments that include the URL for the copied tables as well as modifications to 
 		} 
 
 		.colorfill{
+				/* this is to add the orange in the verticle column.  I needed to to make a dedicated class for just these cells */
 			background-color: rgb(255, 140, 0);
 		}
 		
 
+/* Table 4============================================================================================== */
 
 
+.table4{
+	/* I found this font by searching for a "modern tech font" */
+	font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+	/* all of my previous tables had collapsed the borders.  I wanted to leave them intact for this example */
+	/* border-collapse: collapse; */
+	border: 3px solid blue;
+	border-radius: 12px;
+	
+	
+	
 
+}
 
+.table4 th{
+	/* border-collapse: collapse; */
+	background-color: rgb(30,144,255) ;
+	color: whitesmoke;
+	border: 2px solid blue;
+	
+}
+
+.table4 caption{
+	/* I put the text on the left because non of my other examples had done this.  I thought it may look nice */
+	text-align: left;
+
+}
+
+.lowertext{
+	/* this is to make the text for one cell lower to keep it inline with the cells next to it */
+	vertical-align: bottom;
+}
+
+.tallcell{
+	/* This is to make the heading "hydraulic cylinders" taller to make it more distinguished  */
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	font-size:larger;
+	/* color: whitesmoke; */
+}
+	/* I had to make the cells taller so that when the "text explosion" effect did not affect the size of the cell */
+.mediumtallcell{
+	height: 50px;
+}
+
+.table4 tbody{
+	text-align: center;
+	border: 2px solid blue;
+}
+
+.table4 tbody td{
+	color: blue;
+	background-color: aqua;
+	width: 200px;
+	border: 2px solid blue;
+}
+
+/* I thought it would be neat to invert the colors if the user hovered over the text. */
+/* It did look neat, so then I added a text-explosion effect */
+
+.table4 tbody td:hover{
+	background-color: blue;
+	color:aquamarine;
+	font-size: 2em;
+}
