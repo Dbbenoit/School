@@ -1,0 +1,79 @@
+header{
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    padding: 1em;
+    background-color: azure;
+    font-family: system-ui, sans-serif;
+    font-weight: normal;
+}
+
+a:visited{
+    color:#0000FF;
+}
+
+a:hover{
+    color:rgb(255,0,0);
+}
+
+
+
+footer{
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    padding: 1em;
+    background-color: azure;
+    border-spacing: 5px;
+        /* I wanted the border to be a little smaller than the border for the header.  the first value is top/bottom, second is sides */
+    margin: 10px 15px;
+    font-family: system-ui, sans-serif;
+    font-weight: normal;
+}
+
+
+.banner {
+    display: block;
+    margin-left: auto;    /*this is to make sure the banner is in the center of the page */
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 150px;
+}
+
+
+h1{
+        text-align: center;
+        font-family: system-ui, sans-serif;
+    }
+
+
+main{
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', Arial, sans-serif;
+
+
+    }
+
+.technicalTerms{
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', monospace;
+    font-weight: bold;
+
+    }
+
+.threeColumns{
+    column-count:3;
+    column-gap: 15px;
+    column-fill: balance;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 15px;
+    -webkit-column-fill: balance;
+    -webkit-column-rule-style: solid;
+    -webkit-column-rule-width: 1px;
+    -moz-column-count: 3;
+    -moz-column-gap: 15px;
+    -moz-column-fill: balance; 
+    -moz-column-rule-style: solid;
+    -moz-column-rule-width: 1px;
+
+    }
