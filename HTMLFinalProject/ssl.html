@@ -5,7 +5,7 @@
 <html lang="en">
 <head>				
 	<link rel="stylesheet"  href="style.css">
-	<title>index.html</title> 
+	<title>ssl.html</title> 
 </head>
 
 <body>
@@ -46,6 +46,40 @@
         <div>
 	        <h1>SSL Certificates</h1>
         </div>
+
+		<article>
+			<p>
+			SSL, or Secure Sockets Layer, is a recongnized standard used for keeping the the transfer of data secure between two entities, like a website and a browser or between two servers.  The fundamental method for keeping the data secure is by encrypting the data before transmission and decoding it on arrival.  This prevents hackers from being able to read the information in the case of it being intercepted.  SSL was introduced in the 1990's, but has since been superceded by TLS, or Transport Layer Security.  TLS serves the same function as SSL, but has stronger encrytion and greater effeciency.  SSL is the coloquial name for the technology, even though TLS is far more common to be used today.
+			</p>
+			<p>
+			The SSL and TLS protocols work by proving the authenticity of a website by providing and checking digital certificates.  When a browser makes an attempt to contact a website, the website sends the browser a copy of its TLS certificate.  If the certificate is valid, then the brower and the site create a secure connection for the transmission of data. The certicicate holds information such as the domain name, whom the certificate is issued to, who issued the certificate, the expiration date of the certificate and the public key.  The public key, along with the private key, can be though of as the combination to the encryptinon lock.
+			</p>
+			<p>
+			There are three different certificate types, Domain Validated, Organizatin Validated and Extended Validation.  The most basic form of validation certificate is the Domain Validated certificate.  These are the easiest certificates to obtain and provide the lowest level of certification.  These certificates are low cost because they can be obtained simply by the entity showing that they have control over the given website.  Blogs, personal website and sites that don't gather any personal information or perform financial transactions may use Domain Validated certificates
+			</p>
+			<p>The second level of certification is known as Organization Validated certificates.  These certificates are validated with nine different checks and are commonly found with buisnesses.  The advanced security is obtained by providing far more information about the entity with the certificate.  These are used for buisness sites and sites that require log-ins.
+			</p>
+			<p>
+			The highest level of security is the Extended Validation certificate. This level of certificate uses 16 separate validation checks.  Beyond the checks done for the Organizatin Validated certificate, the Extended Validation Certificate will show indepth information about the site owner, like the the physical address and phone number.  This level is common for financial institutuions, E-commerce sites and Fortune 500 companies.
+			</p>
+
+			<p>
+			Even if you're not familiar with SSL and TLS, you've probably seen they're tell tale signs.  The lock symbol in the browsers URL box is a clear visualization that the website you're viewing has a valid certificate.  
+			</p>
+
+			<p> <a href="https:wwwletsencrypt.org/">Let's Encrypt</a> is a free, automated and open Certificate Authority provided by the <a href="https://www.abetterinternet.org/">Internet Security Research Group</a>. They offer the chance for people to obtain the digital certificates needed to establish their sites.  Their mission is to facilitate an open, safe web while minimizing gate-keeping.  Let's Encrypt lists their stated priorities as:
+			</p>
+			<ul>
+			<li>Free: Allowing anyone who owns a domain to obtain a trust certificate for free</li>
+			<li>Automatic: software to obtain and renew certificates </li>
+			<li>Secure: Let's Encrypt will serve as a platform for advancing TLS security best practices</li>
+			<li>Transparent: All certificated publically listed</li>
+			<li>Open: the automatic process and renewal protocol is available to all</li>
+			<li>Cooperative: "Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, beyond the control of any one organization."</li>
+			</ul>
+
+		</article>
+		
 
 
         
