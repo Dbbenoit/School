@@ -77,3 +77,31 @@ main{
     -moz-column-rule-width: 1px;
 
     }
+
+    /* used to set the Amazon logo hyperlink */
+.leftfloat{
+    float: left;
+    width: 15%;
+    height: auto;
+    padding-right: 20px;
+
+
+}
+ 
+/* used to set the Liquid Web logo hyperlink */
+.rightfloat{
+    float: right;
+    /* height: 100px; */
+    max-width: 200%;
+    height: auto;
+    /* padding-left: 1px; */
+
+
+}
+
+/* adds padding to tuck in info */
+.addpadding{
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
