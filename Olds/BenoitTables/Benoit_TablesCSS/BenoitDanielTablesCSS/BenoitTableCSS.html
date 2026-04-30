@@ -1,7 +1,8 @@
 ﻿<!-- Daniel Benoit  4/18/26 -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Completed Table</title>
@@ -16,6 +17,8 @@
  https://dribbble.com/shots/9838424-Table-Selection-UI -->
 
  <!-- The most distinguishing trait of this table are the zebra stripes.  There aren't many rows, so its just two sets of alternating colors.  In order to make the stripes work, I had to break up the cells with that crossed multiple rows.    -->
+
+ <!-- I had to move the TFOOT below the TBODY to get the HTML to clear the validatior -->
 
  <!-- I was trying to mimic certain features of the example table.  
     a-no borders around cells
@@ -35,9 +38,9 @@
         <!-- I've broken this up with lines, but it could
              be left as one line of text. -->
         <caption>
-            TABLE D - 1.1				<br />
-            ALUMINUM HYDRAULIC SHORING 	<br />
-            VERTICAL SHORES				<br />
+            TABLE D - 1.1				<br>
+            ALUMINUM HYDRAULIC SHORING 	<br>
+            VERTICAL SHORES				<br>
             FOR SOIL TYPE A
         </caption>
 
@@ -81,21 +84,11 @@
 
         <!-- Footer goes here. Before HTML5, it was a requirement that the footer
              be before the tbody. In HTML5, it is not required, but recommended. -->
-        <tfoot>
-            <tr>
-                <!-- Split into 3 lines for typographical reasons. -->
-                <td colspan="6">
-                    Footnotes to tables, and general notes on hydraulic shoring, are found in Appendix D, Item (g) <br />
-                    Note (1): See Appendix D, Item (g)(1) <br />
-                    Note (2): See Appendix D, Item (g)(2)
-                </td>
-            </tr>
-        </tfoot>
+        
 
         <!-- the class "table1body" was made as a way to house the zebra stripes -->
         <tbody class="table1tbody" >
-        
-
+    
                 <!--had to break up the cells with multiple rows to get the stripes to work correctly.-->
 
             <tr >    
@@ -119,6 +112,7 @@
             <tr class="table1OddRows">
                 <th>Over 15 Up To 20</th>
                 <td class="centeralign">7</td>
+                <td colspan="4"></td>
             </tr>
 
             <tr>
@@ -126,6 +120,16 @@
                 <td colspan="5">Note(1)</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <!-- Split into 3 lines for typographical reasons. -->
+                <td colspan="6">
+                    Footnotes to tables, and general notes on hydraulic shoring, are found in Appendix D, Item (g) <br>
+                    Note (1): See Appendix D, Item (g)(1) <br>
+                    Note (2): See Appendix D, Item (g)(2)
+                </td>
+            </tr>
+        </tfoot>
     </table>
 
 <p> </p>
@@ -146,6 +150,7 @@
 
 <!-- I had to change the colspan for Note(1) to "1" so that the work "note" would stay towards the left of the columns when i changed the text align to center-->
 
+<!-- I had to move the TFOOT below the TBODY to get the HTML to clear the validatior -->
 
 
 
@@ -154,9 +159,9 @@
         <!-- I've broken this up with lines, but it could
              be left as one line of text. -->
         <caption>
-            TABLE D - 1.1               <br />
-            ALUMINUM HYDRAULIC SHORING  <br />
-            VERTICAL SHORES             <br />
+            TABLE D - 1.1               <br>
+            ALUMINUM HYDRAULIC SHORING  <br>
+            VERTICAL SHORES             <br>
             FOR SOIL TYPE A
         </caption>
 
@@ -201,16 +206,7 @@
         </thead>
 
         
-        <tfoot>
-            <tr>
-                <!-- Split into 3 lines for typographical reasons. -->
-                <td colspan="6">
-                    Footnotes to tables, and general notes on hydraulic shoring, are found in Appendix D, Item (g) <br />
-                    Note (1): See Appendix D, Item (g)(1) <br />
-                    Note (2): See Appendix D, Item (g)(2)
-                </td>
-            </tr>
-        </tfoot>
+        
 
         <!-- Begin the table body. -->
         <tbody>
@@ -236,6 +232,7 @@
             <tr>
                 <th>Over 15 Up To 20</th>
                 <td>7</td>
+                <td colspan="4"></td>
             </tr>
 
             <tr>
@@ -247,6 +244,16 @@
                 <td> </td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <!-- Split into 3 lines for typographical reasons. -->
+                <td colspan="6">
+                    Footnotes to tables, and general notes on hydraulic shoring, are found in Appendix D, Item (g) <br>
+                    Note (1): See Appendix D, Item (g)(1) <br>
+                    Note (2): See Appendix D, Item (g)(2)
+                </td>
+            </tr>
+        </tfoot>
     </table>
 
     <p> </p>
@@ -275,15 +282,17 @@ I will treat my footer as the bottom row
 
 To make the HTML look right, I changed the colspan on "note(1)" to just "1", this allowed me to center "note(1) directly under the 8 above it and to keep the vertical stripe a uniform width"-->
 
+<!-- I had to move the TFOOT below the TBODY to get the HTML to clear the validatior -->
+
 
         <table class="table3">
         <!-- Caption goes here. -->
         <!-- I've broken this up with lines, but it could
              be left as one line of text. -->
         <caption>
-            TABLE D - 1.1               <br />
-            ALUMINUM HYDRAULIC SHORING  <br />
-            VERTICAL SHORES             <br />
+            TABLE D - 1.1               <br>
+            ALUMINUM HYDRAULIC SHORING  <br>
+            VERTICAL SHORES             <br>
             FOR SOIL TYPE A
         </caption>
 
@@ -329,16 +338,7 @@ To make the HTML look right, I changed the colspan on "note(1)" to just "1", thi
 
         <!-- Footer goes here. Before HTML5, it was a requirement that the footer
              be before the tbody. In HTML5, it is not required, but recommended. -->
-        <tfoot>
-            <tr>
-                <!-- Split into 3 lines for typographical reasons. -->
-                <td colspan="6">
-                    Footnotes to tables, and general notes on hydraulic shoring, are found in Appendix D, Item (g) <br />
-                    Note (1): See Appendix D, Item (g)(1) <br />
-                    Note (2): See Appendix D, Item (g)(2)
-                </td>
-            </tr>
-        </tfoot>
+        
 
         <!-- Begin the table body. -->
         <tbody>
@@ -379,13 +379,25 @@ To make the HTML look right, I changed the colspan on "note(1)" to just "1", thi
                 <td> </td>
             </tr>
         </tbody>
-        <p></p>
+        <tfoot>
+            <tr>
+                <!-- Split into 3 lines for typographical reasons. -->
+                <td colspan="6">
+                    Footnotes to tables, and general notes on hydraulic shoring, are found in Appendix D, Item (g) <br>
+                    Note (1): See Appendix D, Item (g)(1) <br>
+                    Note (2): See Appendix D, Item (g)(2)
+                </td>
+            </tr>
+        </tfoot>
+        
     </table>
 
+    <p></p>
 
     <!-- TABLE 4  TABLE 4 TABLE 4 TABLE 4-->   
 
     <!-- I did not have to make any changes to the HTML code to make my design work  -->
+     <!-- I had to move the TFOOT below the TBODY to get the HTML to clear the validatior -->
 
 
         <table class="table4">
@@ -393,9 +405,9 @@ To make the HTML look right, I changed the colspan on "note(1)" to just "1", thi
         <!-- I've broken this up with lines, but it could
              be left as one line of text. -->
         <caption>
-            TABLE D - 1.1               <br />
-            ALUMINUM HYDRAULIC SHORING  <br />
-            VERTICAL SHORES             <br />
+            TABLE D - 1.1               <br>
+            ALUMINUM HYDRAULIC SHORING  <br>
+            VERTICAL SHORES             <br>
             FOR SOIL TYPE A
         </caption>
 
@@ -441,16 +453,7 @@ To make the HTML look right, I changed the colspan on "note(1)" to just "1", thi
 
         <!-- Footer goes here. Before HTML5, it was a requirement that the footer
              be before the tbody. In HTML5, it is not required, but recommended. -->
-        <tfoot>
-            <tr>
-                <!-- Split into 3 lines for typographical reasons. -->
-                <td colspan="6">
-                    Footnotes to tables, and general notes on hydraulic shoring, are found in Appendix D, Item (g) <br />
-                    Note (1): See Appendix D, Item (g)(1) <br />
-                    Note (2): See Appendix D, Item (g)(2)
-                </td>
-            </tr>
-        </tfoot>
+        
 
         <!-- Begin the table body. -->
         <tbody>
@@ -478,7 +481,17 @@ To make the HTML look right, I changed the colspan on "note(1)" to just "1", thi
                 <td class="mediumtallcell" colspan="5">Note(1)</td>
             </tr>
         </tbody>
-        <p></p>
+        <tfoot>
+            <tr>
+                <!-- Split into 3 lines for typographical reasons. -->
+                <td colspan="6">
+                    Footnotes to tables, and general notes on hydraulic shoring, are found in Appendix D, Item (g) <br>
+                    Note (1): See Appendix D, Item (g)(1) <br>
+                    Note (2): See Appendix D, Item (g)(2)
+                </td>
+            </tr>
+        </tfoot>
+        
     </table>
 
 

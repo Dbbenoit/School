@@ -16,9 +16,9 @@ Comments that include the URL for the copied tables as well as modifications to 
 
 
 		.table1 th{
-		border-spacing: 0px;
+		border-spacing: 0;
 		background-color: rgb(195, 177, 225); 
-		border-width: 0px;
+		border-width: 0;
 		/* the table i was copying only had one row for a heading, so I got rid of the border to make the multiple rows look like one row. */
 		
 		/* The spacing is a little tight between the rows on the left headings, but I wanted to keep the zebra stripes short like in the example. If I wanted to increase the distance between the top and bottom of the headings, I could add the following text:  
@@ -36,7 +36,7 @@ Comments that include the URL for the copied tables as well as modifications to 
 			/* <!-- ceneralign is used to center the text in the 4 striped rows */
 		.centeralign{
 		text-align: center;
-		vertical-align: center;
+		vertical-align: middle;
 		}
 	
 
@@ -58,26 +58,26 @@ Comments that include the URL for the copied tables as well as modifications to 
 		}
 
 		.table2 thead th{
-			border: 0px;
+			border: 0;
 		}
 
 		.table2 tbody tr{
 			border-collapse: collapse;
-			border: 0px;
+			border: 0;
 			
 		}
 
 		.table2 tbody th{
 
-			border-left: 0px;
-			border-right: 0px;
+			border-left: 0;
+			border-right: 0;
 		}
 
 		.table2 tbody td{
 			border-collapse: collapse;
 			/* border: 0px; */
-			border-left: 0px;
-			border-right: 0px;
+			border-left: 0;
+			border-right: 0;
 			text-align: center;
 				/* This padding was added to make sure the "2-inch diameter, 2-inch diameter note(2) and 3-inch diameter" don't touch */
 			padding-right: 1em;
@@ -104,7 +104,7 @@ Comments that include the URL for the copied tables as well as modifications to 
 		}
 
 		.table3 thead {
-			border: 0px;
+			border: 0;
 			background-color: rgb(255, 69, 0);
 			color: white;
 			
